@@ -1,0 +1,24 @@
+{
+  "name": "example-javascript",
+  "version": "1.0.0",
+  "description": "a javascript example",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "debug": "node --inspect-brk ./node_modules/.bin/protractor conf.js",
+    "pretest": "npm run webdriver-update",
+    "test": "protractor conf.js",
+    "webdriver-update": "webdriver-manager update --standalone=false --gecko=false"
+  },
+  "dependencies": {
+    "protractor": "5.4.2",
+    "chance": "1.0.16",
+    "jasmine-spec-reporter": "4.2.1",
+    "protractor-flake": "4.0.0",
+    "fs-extra": "^6.0.1",
+    "jasmine-reporters": "^2.3.1",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "protractor-html-reporter-2": "^1.0.4"
+  },
+  "devDependencies": {}
+}
